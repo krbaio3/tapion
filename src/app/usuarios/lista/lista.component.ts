@@ -19,8 +19,8 @@ export class ListaComponent implements OnInit {
 
   ngOnInit() {
     this.store.select('usuarios').subscribe(usuarios => {
-      this.usuarios = usuarios.user;
-      this.loading = usuarios.loading;
+      // this.usuarios = usuarios.user;
+      // this.loading = usuarios.loading;
       this.error = usuarios.error;
     });
 
