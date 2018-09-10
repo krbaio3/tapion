@@ -32,7 +32,7 @@ export class UsuarioComponent implements OnInit, OnDestroy {
       this.store.dispatch(new CargarUsuario(id));
     });
 
-    this.store.select('usuario')
+    this.usuario = this.store.select('usuario')
       .subscribe(user => {
         this.loading = user.loading;
         this.error = user.error;

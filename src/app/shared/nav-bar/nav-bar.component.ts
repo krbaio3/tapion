@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
 
+  public disabled = true;
+
   constructor( private router: Router ) { }
 
   ngOnInit() {
